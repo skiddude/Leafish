@@ -67,7 +67,7 @@ jobs:
       - name: Build binary
         env:
           MACOSX_DEPLOYMENT_TARGET: 10.14
-        run: cargo build --verbose --release
+        run: cargo build --verbose --release -j 2
       - name: Run tests
         run: cargo test --verbose
 
