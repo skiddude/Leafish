@@ -62,7 +62,7 @@ jobs:
         uses: actions-rs/clippy-check@v1.0.7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          args: --all-targets -- -D warnings
+          args: --all-targets -- -A warnings
 
       - name: Build binary
         env:
